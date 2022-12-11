@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="invo_desc_without_internal_ref.list">
+      <field name="name">invo_desc_without_internal_ref list</field>
+      <field name="model">invo_desc_without_internal_ref.invo_desc_without_internal_ref</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="invo_desc_without_internal_ref.action_window">
+      <field name="name">invo_desc_without_internal_ref window</field>
+      <field name="res_model">invo_desc_without_internal_ref.invo_desc_without_internal_ref</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="invo_desc_without_internal_ref.action_server">
+      <field name="name">invo_desc_without_internal_ref server</field>
+      <field name="model_id" ref="model_invo_desc_without_internal_ref_invo_desc_without_internal_ref"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="invo_desc_without_internal_ref" id="invo_desc_without_internal_ref.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="invo_desc_without_internal_ref.menu_1" parent="invo_desc_without_internal_ref.menu_root"/>
+    <menuitem name="Menu 2" id="invo_desc_without_internal_ref.menu_2" parent="invo_desc_without_internal_ref.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="invo_desc_without_internal_ref.menu_1_list" parent="invo_desc_without_internal_ref.menu_1"
+              action="invo_desc_without_internal_ref.action_window"/>
+    <menuitem name="Server to list" id="invo_desc_without_internal_ref" parent="invo_desc_without_internal_ref.menu_2"
+              action="invo_desc_without_internal_ref.action_server"/>
+-->
+  </data>
+</odoo>
